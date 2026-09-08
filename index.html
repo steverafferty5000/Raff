@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve Rafferty | Commercial Sales & Executive Leader</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-color: #38bdf8;
+            --border-color: #334155;
+        }
+
+        [data-theme="light"] {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #0f172a;
+            --text-muted: #64748b;
+            --accent-color: #0284c7;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            padding: 60px 0 40px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .theme-toggle {
+            background: none;
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 1.25rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin-bottom: 30px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 50px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: #0f172a;
+        }
+
+        .btn-secondary {
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+
+        .metric-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .metric-number {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--accent-color);
+        }
+
+        .metric-label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 5px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .experience-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .role-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 10px;
+        }
+
+        .role-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .company-name {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .role-dates {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .experience-card ul {
+            list-style-type: none;
+            margin-top: 15px;
+        }
+
+        .experience-card li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            color: var(--text-muted);
+        }
+
+        .experience-card li::before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span style="font-weight: 700; font-size: 1.2rem;">SR</span>
+            <button class="theme-toggle" onclick="toggleTheme()"><i class="fas fa-moon"></i> Theme</button>
+        </header>
+
+        <section class="hero">
+            <h1>STEVE RAFFERTY</h1>
+            <h2>Senior Commercial & Executive Sales Leader</h2>
+            <p>Driving commercial revenue growth through identity technology, fan engagement platforms, enterprise software, and strategic partner ecosystems across ANZ & APAC.</p>
+            <div class="cta-buttons">
+                <a href="mailto:steve.rafferty@icloud.com" class="btn btn-primary">Get In Touch</a>
+                <a href="tel:0413041288" class="btn btn-secondary">0413 041 288</a>
+            </div>
+        </section>
+
+        <section class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-number">$4M+ USD</div>
+                <div class="metric-label">Enterprise Pipeline Built</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-number">30K+</div>
+                <div class="metric-label">AO Biometric Enrollments</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-number">96%</div>
+                <div class="metric-label">Annual Target Met in 9 Mos</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-number">10+ Yrs</div>
+                <div class="metric-label">Telstra Awards Judge</div>
+            </div>
+        </section>
+
+        <h3 class="section-title">Selected Experience</h3>
+
+        <div class="experience-card">
+            <div class="role-header">
+                <div><span class="role-title">Sales Director, ANZ</span> – <span class="company-name">Wicket Software</span></div>
+                <div class="role-dates">2025 – 2026</div>
+            </div>
+            <ul>
+                <li>Led end-to-end ANZ business development, opening new markets and building $4M+ USD in qualified pipeline.</li>
+                <li>Spearheaded biometric entry deployment at the Australian Open, achieving 30K+ enrollments and 7x YoY adoption growth.</li>
+                <li>Brokered high-value integration ecosystems across venue ticketing, access control, and retail systems.</li>
+            </ul>
+        </div>
+
+        <div class="experience-card">
+            <div class="role-header">
+                <div><span class="role-title">APAC Business Development Manager</span> – <span class="company-name">Tradable Bits</span></div>
+                <div class="role-dates">2023 – 2025</div>
+            </div>
+            <ul>
+                <li>Managed the APAC sports vertical, generating $1.1M CAD in qualified pipeline and achieving 96% of targets in 9 months.</li>
+                <li>Delivered multi-year commercial partnerships with premier sports rights holders including Hockey One, Netball SA/QLD, NRL teams, and Paralympics Australia.</li>
+            </ul>
+        </div>
+
+        <div class="experience-card">
+            <div class="role-header">
+                <div><span class="role-title">Senior Account Executive</span> – <span class="company-name">DocuSign & OpenText</span></div>
+                <div class="role-dates">2020 – 2023</div>
+            </div>
+            <ul>
+                <li>Managed major enterprise accounts across VIC/TAS, driving agreement cloud and enterprise content management adoption.</li>
+                <li>Partnered with global ecosystems (SAP, Workday, Microsoft) to accelerate client workflow speeds by 30-50%.</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Steve Rafferty • Melbourne, VIC • steve.rafferty@icloud.com</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const currentTheme = document.body.getAttribute('data-theme');
+            if (currentTheme === 'light') {
+                document.body.removeAttribute('data-theme');
+            } else {
+                document.body.setAttribute('data-theme', 'light');
+            }
+        }
+    </script>
+</body>
+</html>
